@@ -1,0 +1,40 @@
+<di class="row" ng-controller="productoCtrl">
+    <div class="col-md-8">
+        <form class="formulario">
+            <div class="form-group">
+                <label for="txtNombre">Producto Nombre</label>
+                <input type="text" class="form-control" id="txtNombre" ng-model="Producto.Nombre">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <label for="txtStock">Password</label>
+                <input type="numeric" class="form-control" id="txtStock" ng-model="Producto.Stock">
+            </div>
+            <div class="form-check">
+                <label class="">Categoria</label>
+                <select class="form-control">
+                        <option value="0">Selecciones una categoria.</option>
+                    <option value="">value1</option>
+                    <option value="">value2</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <label class="">Presentacion</label>
+                <select class="form-control">
+                    <option value="0">Selecciones una presentacion.</option>
+                    <option value="">value1</option>
+                    <option value="">value2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txtDescripcion">Descripcion</label>
+                <textarea class="form-control" id="txtDescripcion" rows="4" ng-model="Producto.Descripcion"></textarea>
+            </div>
+            <div class="form-groud">
+                <label for="dtFecha">Fecha</label>
+                <input class="form-control" type="date" id="dtFecha" ng-model="Producto.Fecha">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</di>
